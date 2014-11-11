@@ -1,11 +1,12 @@
 /**
  * Binary Search Tree Assignment
  * 
- * 1.  write contains (5pts)
- * 2.  write traverseInorder (5pts)
- * 3.  write randomizedSort (5pts)
- * 4.  improve insert to self balance using AVL (5 pts)
- * 5.  write delete, also self balancing using AVL (5 pts)
+ * 1. write contains (4pts)
+ * 2. write traverseInorder (4pts)
+ * 3. write randomizedSort (5pts)
+ * 4. write delete (5pts)
+ * 5. improve insert to self balance using AVL (4pts)
+ * 6. improve delete to self balancing using AVL (3pts)
  * 
  */
 
@@ -91,7 +92,7 @@ public class BinarySearchTree {
      *        
      * should return ['a','b','c','d','e','g','h']
 	 */
-	public List<Integer> traverseInorder() {
+	public List<Character> traverseInorder() {
 		return null;
 	}
 
@@ -104,7 +105,7 @@ public class BinarySearchTree {
 	 * @param unsorted a list of items
 	 * @return a new sorted lest
 	 */
-	public static List<Integer> randomizedSort(List<Integer> unsorted) {
+	public static List<Character> randomizedSort(List<Character> unsorted) {
 		return unsorted;
 	}
 

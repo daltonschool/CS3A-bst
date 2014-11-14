@@ -55,10 +55,16 @@ public class BinarySearchTree {
 	private void insert(char c, Node n) {
 		if(c==n.data) return;						//c already in tree
 		else if(c<n.data) {							//c is less than n
-			if(n.left==null) n.left = new Node(c); 	//there is no child to the left, add c
+			if(n.left==null) {
+				n.left = new Node(c); 	//there is no child to the left, add c
+				n.left.parent = n;
+			}
 			else insert(c, n.left);					//insert c in left subtree
 		} else {									//c is greater than n
-			if(n.right==null) n.right = new Node(c);//there is no child to the right, add c
+			if(n.right==null) {
+				n.right = new Node(c);//there is no child to the right, add c
+				n.right.parent = n;
+			}
 			else insert(c, n.right);				//insert c in right subtree
 		}
 	}
@@ -126,6 +132,7 @@ class Node {
 	char data;
 	Node left;
 	Node right;
+	Node parent;
 
 	public Node(char d) {
 		data = d;
